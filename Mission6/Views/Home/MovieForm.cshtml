@@ -1,0 +1,56 @@
+@model MovieForm
+
+<h1>@ViewData["Title"]</h1>
+
+<h1>Movie Form</h1>
+<br/>
+<form method="post">
+    <label asp-for="Category">Category:</label>
+    <input asp-for="Category"/>
+    <span asp-validation-for="Category" class="text-danger"></span>
+    <br/>
+
+    <label asp-for="Title">Title:</label>
+    <input asp-for="Title"/>
+    <span asp-validation-for="Title" class="text-danger"></span>
+    <br/>
+
+    <label asp-for="Year">Year</label>
+    <input asp-for="Year"/>
+    <span asp-validation-for="Year" class="text-danger"></span>
+    <br/>
+
+    <label asp-for="Director">Director</label>
+    <input asp-for="Director"/>
+    <span asp-validation-for="Director" class="text-danger"></span>
+    <br/>
+
+    <label asp-for="Rating">Rating</label>
+    <select asp-for="Rating">
+        <option value="">Select a rating</option> <!-- Prevents auto-selection -->
+        <option>G</option>
+        <option>PG</option>
+        <option>PG-13</option>
+        <option>R</option>
+    </select>
+    <span asp-validation-for="Rating" class="text-danger"></span>
+    <br/>
+
+    <label asp-for="Edited">Edited</label>
+    <select asp-for="Edited">
+        <option value="">Select an option</option> <!-- Prevents auto-selection -->
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+    </select>
+    <br/>
+
+    <label asp-for="LentTo">Lent To:</label>
+    <input asp-for="LentTo"/>
+    <br/>
+
+    <label asp-for="Notes">Notes:</label>
+    <input asp-for="Notes"/>
+    <br/>
+
+    <button type="submit">Submit Form</button>
+</form>
