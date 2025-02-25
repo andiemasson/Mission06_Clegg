@@ -3236,11 +3236,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/andieclegg/RiderProjects/Mission6/Mission6/Mission6.csproj",
+      "projectUniqueName": "/Users/andieclegg/RiderProjects/Mission06_Clegg/Mission6/Mission6.csproj",
       "projectName": "Mission6",
-      "projectPath": "/Users/andieclegg/RiderProjects/Mission6/Mission6/Mission6.csproj",
+      "projectPath": "/Users/andieclegg/RiderProjects/Mission06_Clegg/Mission6/Mission6.csproj",
       "packagesPath": "/Users/andieclegg/.nuget/packages/",
-      "outputPath": "/Users/andieclegg/RiderProjects/Mission6/Mission6/obj/",
+      "outputPath": "/Users/andieclegg/RiderProjects/Mission06_Clegg/Mission6/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/andieclegg/.nuget/NuGet/NuGet.Config"
