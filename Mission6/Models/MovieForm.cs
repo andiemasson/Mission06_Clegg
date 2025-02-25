@@ -5,6 +5,9 @@ namespace Mission6.Models;
 public class MovieForm
 {
     [Key]
+    [Required]
+    public int MovieId { get; set; }
+    
     [Required(ErrorMessage = "Category is required")]
     public string Category { get; set; }
 
