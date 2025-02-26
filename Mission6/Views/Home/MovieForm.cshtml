@@ -5,9 +5,15 @@
 <h1>Movie Form</h1>
 <br/>
 <form method="post">
-    <label asp-for="Category">Category:</label>
-    <input asp-for="Category"/>
-    <span asp-validation-for="Category" class="text-danger"></span>
+    <input type="hidden" asp-for="MovieId">
+
+    <select asp-for="CategoryId">
+        <option value="">Select a Category</option>
+        @foreach (Categories m in ViewBag.Categories)
+        {
+            <option value="@m.CategoryId">@m.CategoryName</option>
+        }
+    </select>
     <br/>
 
     <label asp-for="Title">Title:</label>
@@ -48,9 +54,19 @@
     <input asp-for="LentTo"/>
     <br/>
 
+    <label asp-for="CopiedToPlex">Copied to Plex?</label>
+    <select asp-for="CopiedToPlex">
+        <option value="">Select an option</option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+    </select>
+    <br/>
+    
     <label asp-for="Notes">Notes:</label>
     <input asp-for="Notes"/>
     <br/>
 
     <button type="submit">Submit Form</button>
+
+    <div asp-validation-summary="All"></div>
 </form>
